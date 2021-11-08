@@ -1,11 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Cabin");
-@import url("https://fonts.googleapis.com/css?family=Lora");
-
-@font-face {
-  font-family: Cabin;
-  src: url("https://fonts.googleapis.com/css?family=Cabin");
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-@font-face {
-  font-family: Lora;
-  src: url("https://fonts.googleapis.com/css?family=Lora");
+
+.nav li a {
+  display: block;
+  color: white;
+  float: right;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: dodgerblue;
 }
