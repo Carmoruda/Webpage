@@ -306,6 +306,102 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   margin-right: auto;
 }
 
+.definition-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.how-it-works-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.types-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.news-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.survey-page-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.resources-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
 .carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail a>img,.thumbnail>img {
   display:block;max-width:100%;height:auto
 }
@@ -552,6 +648,51 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   border-top-right-radius: calc(0.25rem - 1px);
 }
 
+.news-section .card {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.card-title {
+  margin-bottom: .5rem;
+}
+
+.news-section .card h4, .news-section .card .h4 {
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: .8em;
+}
+
+.news-section .card p {
+  font-size: .9em;
+  opacity: .8;
+}
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.news-section .card button {
+  margin-bottom: 25px;
+  padding: 6px 20px;
+}
+
 @media (min-width: 576px) {
   .col-sm-3 {
     flex: 0 0 auto;
@@ -619,7 +760,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   opacity: .8;
 }
 
-.icon-compass, .icon-energy, .icon-people, .icon-camera {
+.icon-compass, .icon-energy, .icon-people, .icon-camera, .icon-screen-smartphone, .icon-picture, .icon-speech, .icon-handbag {
     font-family: simple-line-icons;
     font-style: normal;
     font-weight: 400;
@@ -628,6 +769,11 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
 }
 
 .col-sm-3 {
