@@ -2,6 +2,8 @@
   pointer-events: none;
 }
 
+/*Navigation bar configuration*/
+
 .clean-navbar .logo {
   font-size: 1.5rem;
   padding-top: .3125rem;
@@ -28,9 +30,11 @@
   display: flex !important;
   flex-basis: auto;
 }
+
 .collapse:not(.show) {
   display: none;
 }
+
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
@@ -50,6 +54,7 @@
   --bg-opacity: 1;
   background-color: rgba(var(--white-rgb), var(--bg-opacity)) !important;
 }
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -57,10 +62,12 @@
   left: 0;
   z-index: 1030;
 }
+
 .navbar-expand-lg {
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
+
 .navbar {
   position: relative;
   display: flex;
@@ -123,24 +130,9 @@
   list-style: none;
 }
 
-.whats-sm-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: currentColor;
-  z-index: 1;
-}
-.whats-sm-section h2, .whats-sm-section .h2 {
-  margin-bottom: 30px;
-}
+/*Buttons*/
 
-.whats-sm-section p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
+/*Main button class*/
 
 .button {
   display: inline-block;
@@ -162,12 +154,14 @@
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.whats-sm-button:active:focus {
-  box-shadow: 0 0 0 .25rem rgba(248,249,250,.5);
-}
-
 button:focus:not(:focus-visible) {
   outline: 0;
+}
+
+/*What is social media button config*/
+
+.whats-sm-button:active:focus {
+  box-shadow: 0 0 0 .25rem rgba(248,249,250,.5);
 }
 
 .whats-sm-button:active {
@@ -190,6 +184,8 @@ button:focus:not(:focus-visible) {
   border-color: #f8f9fa;
 }
 
+/*News button config*/
+
 .news-button {
   color: #0d6efd;
   border-color: #0d6efd;
@@ -197,6 +193,8 @@ button:focus:not(:focus-visible) {
   font-size: 0.875rem;
   border-radius: .2rem;
 }
+
+/*Survey Button button config*/
 
 .survey-button {
   color: #0d6efd;
@@ -214,10 +212,34 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   box-shadow: 0 0 0 .25rem rgba(13,110,253,.5);
 }
 
+/*News and survey button hover*/
 .news-button:hover, .survey-button:hover {
   color: #fff;
   background-color: #0d6efd;
   border-color: #0d6efd;
+}
+
+/*Sections*/
+
+/*What is social media section configuration*/
+
+.whats-sm-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: currentColor;
+  z-index: 1;
+}
+.whats-sm-section h2, .whats-sm-section .h2 {
+  margin-bottom: 30px;
+}
+
+.whats-sm-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 576px) {
@@ -257,104 +279,9 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   background-position: center center;
 }
 
+/*Survey section and page configuration*/
+
 .survey-section {
-  position: relative;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 0;
-  width: 100%;
-  background-color: #f6f6f6;
-  padding-top: 3%;
-  padding-bottom: 5%;
-}
-
-.businesses-sm-section {
-  position: relative;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 0;
-  width: 100%;
-  padding-top: 1%;
-  padding-bottom: 3%;
-}
-
-.infographics-section {
-  position: relative;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 0;
-  width: 100%;
-  background-color: #f6f6f6;
-  padding-top: 3%;
-  padding-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.definition-section {
-  position: relative;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 0;
-  width: 100%;
-  background-color: #f6f6f6;
-  padding-top: 3%;
-  padding-bottom: 5%;
-}
-
-.how-it-works-section {
-  position: relative;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 0;
-  width: 100%;
-  background-color: #f6f6f6;
-  padding-top: 3%;
-  padding-bottom: 5%;
-}
-
-.types-section {
-  position: relative;
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 0;
-  width: 100%;
-  background-color: #f6f6f6;
-  padding-top: 3%;
-  padding-bottom: 5%;
-}
-
-.news-section {
   position: relative;
   text-align: center;
   background-size: cover;
@@ -386,6 +313,117 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   padding-bottom: 5%;
 }
 
+/*Businesses and social media section configuration*/
+
+.businesses-sm-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+/*Infographics section*/
+
+.infographics-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Definition section configuration*/
+
+.definition-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+/*How it works section configuration*/
+
+.how-it-works-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+/*Types of social media section configuration*/
+
+.types-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+/*News section configuration*/
+
+.news-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+/*Resources section configuration*/
+
 .resources-section {
   position: relative;
   text-align: center;
@@ -401,6 +439,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   padding-top: 3%;
   padding-bottom: 5%;
 }
+
+/*Infographics image carousel*/
 
 .carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail a>img,.thumbnail>img {
   display:block;max-width:100%;height:auto
@@ -637,9 +677,14 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   border: 0 !important;
 }
 
+/*News and resources cards configuration*/
+
 .w-100 {
-  width: 100% !important;
+  width: 616.267px !important;
+  height: 379px;
+  object-fit: cover;
 }
+
 .d-block {
   display: block !important;
 }
@@ -648,12 +693,29 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   border-top-right-radius: calc(0.25rem - 1px);
 }
 
-.news-section .card {
+.card-img, .-card-img-top, .card-img-bottom {
+  width: 100%;
+}
+
+.news-section .card, .resources-section .card {
   margin-bottom: 30px;
   text-align: center;
 }
 
-.card {
+.news-section .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  height: 589px;
+}
+
+.resources-section .card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -674,13 +736,13 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   margin-bottom: .5rem;
 }
 
-.news-section .card h4, .news-section .card .h4 {
+.news-section .card h4, .news-section .card .h4, .resources-section .card h4, .resources-section .card .h4 {
   font-weight: 600;
   font-size: 1em;
   margin-bottom: .8em;
 }
 
-.news-section .card p {
+.news-section .card p, .resources-section .card p {
   font-size: .9em;
   opacity: .8;
 }
@@ -688,8 +750,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   margin-bottom: 0;
 }
 
-.news-section .card button {
-  margin-bottom: 25px;
+.news-section .card button, .resources-section .card button {
+  margin-bottom: 6.5%;
   padding: 6px 20px;
 }
 
@@ -708,6 +770,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   max-width: 417px;
   height: auto;
 }
+
+/*General block headings*/
 
 .block-heading {
   padding-top: 80px;
@@ -735,6 +799,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   opacity: .7;
 }
 
+/*Features boxes*/
+
 .feature-box {
   position: relative;
   padding: 15px 20px 15px 70px;
@@ -760,6 +826,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   opacity: .8;
 }
 
+/*Icons configuration*/
+
 .icon-compass, .icon-energy, .icon-people, .icon-camera, .icon-screen-smartphone, .icon-picture, .icon-speech, .icon-handbag {
     font-family: simple-line-icons;
     font-style: normal;
@@ -770,6 +838,27 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/*Text items configuration*/
+
+.text-center {
+  text-align: center !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.text-info {
+  --text-opacity: 1;
+  color: rgba(var(--info-rgb), var(--text-opacity)) !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+/*Columns configuration*/
 
 .col-lg-4 {
   flex: 0 0 auto;
@@ -791,22 +880,7 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   width: 50%;
 }
 
-.text-center {
-  text-align: center !important;
-}
-
-.align-items-center {
-  align-items: center !important;
-}
-
-.text-info {
-  --text-opacity: 1;
-  color: rgba(var(--info-rgb), var(--text-opacity)) !important;
-}
-
-.justify-content-center {
-  justify-content: center !important;
-}
+/*Rows configuration*/
 
 .row {
   --gutter-x: 1.5rem;
@@ -821,6 +895,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 *, ::before, ::after {
   box-sizing: border-box;
 }
+
+/*Footer configuration*/
 
 .page-footer.dark {
   background-color: #2b2f31;
@@ -900,6 +976,8 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   text-decoration: none;
 }
 
+/*General elements configuration*/
+
 img, svg {
   vertical-align: middle;
 }
@@ -915,6 +993,7 @@ h2, .h2 {
 
 h4, .h4 {
   font-size: 1.5rem;
+  font-size: calc(1.275rem + 0.3vw);
 }
 
 h5, .h5 {
@@ -946,6 +1025,8 @@ body {
   color: var(--body-color);
   background-color: var(--body-background-color);
 }
+
+/*Typography configuration*/
 
 :root {
   scroll-behavior: smooth;
