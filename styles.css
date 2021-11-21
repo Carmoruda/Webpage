@@ -3,16 +3,19 @@
 }
 
 /*Navigation bar configuration*/
-
-.clean-navbar .logo {
+.navbar-light .logo {
+  color: rgba(0,0,0,.9);
   font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.logo {
   padding-top: .3125rem;
   padding-bottom: .3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
-  color: rgba(0,0,0,.9);
 }
 
 .clean-navbar.fixed-top, .clean-navbar.fixed-bottom {
@@ -29,6 +32,14 @@
 .navbar-expand-lg .navbar-collapse {
   display: flex !important;
   flex-basis: auto;
+}
+
+.navbar-expand-lg .nav-list {
+  flex-direction: row;
+}
+
+.ms-auto {
+  margin-left: auto !important;
 }
 
 .collapse:not(.show) {
@@ -115,18 +126,15 @@
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
-.nav-item {
+.clean-navbar .nav-list .nav-item {
   padding: 2rem;
 }
 
 .nav-list {
-  list-style-type: none;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -425,6 +433,24 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
 /*Resources section configuration*/
 
 .resources-section {
+  position: relative;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+/*Footer pages sections configuration*/
+
+.footer-pages-section {
   position: relative;
   text-align: center;
   background-size: cover;
@@ -770,6 +796,9 @@ button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled)
   max-width: 417px;
   height: auto;
 }
+
+/*Contact us configuration*/
+
 
 /*General block headings*/
 
